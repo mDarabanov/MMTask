@@ -1,4 +1,7 @@
 function printMM(N) {
+  if (N % 2 === 0) {
+    throw new Error('Wrong Input!');
+  }
   let oddNumberMinus = 1;
   let oddNumberStar = N * 2 - 1;
 
@@ -50,4 +53,4 @@ function printLastRow(N) {
   return row;
 }
 
-printMM(9);
+printMM(3);
